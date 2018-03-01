@@ -118,9 +118,7 @@ li {
 .icon-basket:active { 
 	color: #cccccc; 
 }
-
 .slider-block {	
-	height: 340px; 
 	overflow: hidden;
 }
 .slider-block ul li {
@@ -132,12 +130,6 @@ li {
 .slider-block ul {
 	position: relative;
 	width: 3200px;
-	height: 340px;
-	margin-left: 80px;
-}
-.slider-block ul {
-	width: 2000px;
-	height: 340px;
 }
 .slider-block-description {
 	float:left;
