@@ -119,10 +119,29 @@ li {
 	color: #cccccc; 
 }
 
-.slider-block {	height: 340px; }
+.slider-block {	
+	height: 340px; 
+	overflow: hidden;
+}
+.slider-block ul li {
+	display: inline-block;
+	height: 280px;
+	margin-right: 100px;
+	width: 900px;
+}
+.slider-block ul {
+	position: relative;
+	width: 3200px;
+	height: 340px;
+	margin-left: 80px;
+}
+.slider-block ul {
+	width: 2000px;
+	height: 340px;
+}
 .slider-block-description {
 	float:left;
-	width: 380px;
+	width: 500px;
 
 	color: #283136;
 }
@@ -132,7 +151,33 @@ li {
 }
 .slider-block-description h2 { margin-top: 30px; }
 .slider-block-pic {
+	display: inline-block;
 	float:right;
+
+	margin-right: 10px;
+}
+.nav-control {
+	padding: 0 48% 0 48%;	
+}
+.nav {
+	width: 100px;
+	color: black;
+	position: relative;
+	top: -120px;
+}
+.nav .slider-btn {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border: 3px solid #ffffff;
+	border-radius: 50%;
+	margin-right: 9px;
+}
+.slider-notchoosed {
+	background-color: #ffffff;	
+}
+.slider-choosed {
+	background-color: #c1c1c1;
 }
 .button {
 	border-radius: 3px;
@@ -142,6 +187,13 @@ li {
 	background-color: #fb565a;
 
 	padding: 10px 70px;
+}
+.find-more:hover {
+	background-color: #d6494d;
+}
+.find-more:active {
+	background-color: #b63538;
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.2);
 }
 .features {
 	height: 390px;
@@ -163,13 +215,34 @@ li {
 	background-color: #fb565a;
 	padding: 10px 40px;
 }
+.order-websites:hover {
+	background-color: #d6494d;
+}
+.order-websites:active {
+	background-color: #b63538;
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.2);
+}
 .order-apps {	
 	background-color: #00ca74;
 	padding: 10px 40px;
 }
+.order-apps:hover {
+	background-color: #01a25e;
+}
+.order-apps:active {
+	background-color: #009053;
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.2);
+}
 .order-presentations {	
 	background-color: #efc84a;
 	padding: 10px 40px;
+}
+.order-presentations:hover {	
+	background-color: #d6ae2c;
+}
+.order-presentations:active {	
+	background-color: #c09b24;
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.2);
 }
 .info {
 	height: 400px;
