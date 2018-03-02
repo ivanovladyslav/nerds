@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="http://api-maps.yandex.ru/2.1.17/?lang=ru_RU" type="text/javascript"></script>
 		<script src="js/slider.js"></script>
 	</head>
 	<body>
@@ -135,8 +136,32 @@
 
 		</div>
 		
-		<div class="map">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac9b558495adebbba8872286198ae4d86c52d00058cd9c9fbbff4d3506bbd85a7&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=true"></script>
+		<div id="map">
+			<script type="text/javascript">
+				ymaps.ready(init);
+				function init() {     
+				    var myMap;
+				    myMap = new ymaps.Map("map", {
+				        center: [45.0435, 38.94345],
+				        zoom: 19,
+				        controls: []
+				    });
+
+				    var myPlacemark = new ymaps.Placemark([45.043323, 38.944240] , {},
+				        { iconLayout: 'default#image',
+				          iconImageHref: 'img/mapPointer.png',
+				          iconImageSize: [239, 190],
+				          iconImageOffset: [-60, -210] });   
+
+				    myMap.geoObjects.add(myPlacemark);
+				}
+			</script>
+			<div class="popup">
+			<p class="popup-title"><span>NЁRDS </span>DESIGN STUDIO</p>
+			<p>350000, Краснодар, ул. Головатого, 100</p>
+			<p>тел. +7 (861) 275-75-75</p>
+			<a href="#" class="button">НАПИШИТЕ НАМ</a>
+			</div>;
 		</div>
 
 

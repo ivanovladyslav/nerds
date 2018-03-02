@@ -35,12 +35,12 @@ $(document).ready(function($) {
 		}
 		moveSlider($('.slider-btn[data-count="'+clickedButton+'"]'));
 	}
-	timerSlide = setInterval(slideLoop, 2000);
+	timerSlide = setInterval(slideLoop, 10000);
 
 	$('.nav div').on('click', function() {
 		moveSlider(this);
 		clearTimeout(timerSlide);
-		timerSlide = setInterval(slideLoop, 2000);
+		timerSlide = setInterval(slideLoop, 10000);
 	});
 
 
