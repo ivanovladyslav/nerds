@@ -27,13 +27,14 @@ ul {
 a {
 	text-transform: uppercase;
 	text-decoration: none;
+	font-weight: 400;
 }
 h3 {
 	text-transform: uppercase;
 }
 h2 {
 	font-size: 36px;
-	font-weight: bold;
+	font-weight: 500;
 	line-height: 36px;
 
 	margin-bottom: 15px;
@@ -98,7 +99,6 @@ li {
 	padding: 10px;
 
 	text-decoration: none;
-	font-weight: bold;
 	color: black;
 }
 .icon-basket { 
